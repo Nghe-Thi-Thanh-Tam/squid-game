@@ -1,6 +1,15 @@
 # red-light-green-light
 OOP final project
+
 **Team Member**
+
+          Nghê Thị Thanh Tâm
+
+          Nguyễn Vũ Nhật Quang
+
+          Nguyễn Trần Trung Kỳ
+
+          Nguyễn Hoàng Thiên Phúc
 
 **CONCEPT:**
 This is a children game in many country, featured in Netflix hit "Squid Game." 
@@ -18,3 +27,4 @@ This game have two team, 👧the catcher and🏃the player.
 **Language**
 
 **Implementation**
+  https://github.com/0shuvo0/squidgame
