@@ -31,6 +31,12 @@ This is a traditional game in many country - Vietnamese version of "Em bé tập
 
 
 
+**Extra features**
+- Boosting items:
+          Speed up and slow down drink
+          Make the catcher froze for a certain of time
+          One-time protecting shield
+
 **Language**
 
 **Implementation**
