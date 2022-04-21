@@ -34,9 +34,9 @@ This is a traditional game in many country - Vietnamese version of "Em bé tập
 
 **Secondary Feature(nice-to-have):**
 - Boosting items:
-          Speed up and slow down drink
-          Make the catcher froze for a certain of time
-          One-time protecting shield
+-         Speed up and slow down drink
+-         Make the catcher froze for a certain of time
+-         One-time protecting shield
 - SFX (Game start, Game-over, Win,...)
 - Due to licensing fee, I won't get "Fly me to the moon in the game"
 - Multiplayer, possibly in the same wifi, not online.
