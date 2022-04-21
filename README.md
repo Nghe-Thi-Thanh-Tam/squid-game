@@ -25,19 +25,38 @@ This game have two team, 👧the catcher and🏃the player.
 **Motivation**
 This is a traditional game in many country - Vietnamese version of "Em bé tập đi", featured in Netflix hit "Squid Game.", after the successful of the series, "Red light green light" has gained awareness around the world. Since then, there were many version of playing this game online on the internet. We wanted to make something trendy and also found it challeging doing this for the first time.
 
-**Similar games**
+**Primary Feature(must-have):**
+- Fully Functional GUI,
+- One bot to catch the player
+- A timer to count the time left for each game, and it display on the screen for the player to see
+- Player clock to count the difference in time(this is subject to change if we found better method)
+- Bots playing with player(10+, but most of them will lose the game)
 
-![image](https://user-images.githubusercontent.com/91868406/164357756-f3965c2a-67e1-45fc-9da8-9d287902ee67.png)
-
-
-
-**Extra features**
+**Secondary Feature(nice-to-have):**
 - Boosting items:
           Speed up and slow down drink
           Make the catcher froze for a certain of time
           One-time protecting shield
+- SFX (Game start, Game-over, Win,...)
+- Due to licensing fee, I won't get "Fly me to the moon in the game"
+- Multiplayer, possibly in the same wifi, not online.
+- Nice Backdrop(2D only)
+- Eliminate player animation.
 
+**Sub Task:**
+- Ensure a functional gui for each stage
+- code the main bot
+- code the playing bot
+- code the game control
+-
 **Language**
+Java
 
-**Implementation**
+**Previous Implementation**
   https://github.com/0shuvo0/squidgame
+
+**Similar games**
+
+
+![image](https://user-images.githubusercontent.com/91868406/164357756-f3965c2a-67e1-45fc-9da8-9d287902ee67.png)
+
