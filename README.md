@@ -23,7 +23,7 @@ This game have two team, 👧the catcher and🏃the player.
 ✅ The player win if he reach the finish line before time is ran out without get caught.
 
 **Motivation**
-This is a traditional game in many country including Vietnam, featured in Netflix hit "Squid Game.", after the successful of the series, "Red light green light" has gained awareness around the world. Since then, there were many version of playing this game online on the internet. We wanted to make something trendy and also found it challeging doing this for the first time.
+This is a traditional game in many country - Vietnamese version of "Em bé tập đi", featured in Netflix hit "Squid Game.", after the successful of the series, "Red light green light" has gained awareness around the world. Since then, there were many version of playing this game online on the internet. We wanted to make something trendy and also found it challeging doing this for the first time.
 
 **Similar games**
 
