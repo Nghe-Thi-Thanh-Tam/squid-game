@@ -2,8 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Map extends JPanel{
-    private final int width = 1000;
-    private final int height = 600;
+    private int width;
+    private int height;
     protected int startY;
     protected int finishY;
     protected Image npc1 = new ImageIcon("res\\NPC\\NPC(1).png").getImage();
@@ -13,6 +13,9 @@ public class Map extends JPanel{
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        
+        width = getWidth();
+        height = getHeight();
 
         startY = height/9;
         finishY = height - startY;
