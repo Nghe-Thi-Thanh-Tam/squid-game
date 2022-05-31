@@ -161,44 +161,44 @@ public class GamePanel extends JPanel implements Runnable {
                 break;
             case 1 :
                 g.drawImage(break11,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
 
             case 2:
                 g.drawImage(break12,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 3:
                 g.drawImage(break21,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 4:
                 g.drawImage(break22,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 5:
                 g.drawImage(break31,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 6:
                 g.drawImage(break32,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 7:
                 g.drawImage(break41,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 8:
                 g.drawImage(break42,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 9:
                 g.drawImage(break51,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
             case 10:
                 g.drawImage(break52,0,0,1600,900,null);
-//                gameThread.stop();
+               gameThread.stop();
                 break;
         }
 
