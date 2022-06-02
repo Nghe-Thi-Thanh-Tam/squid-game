@@ -74,100 +74,75 @@ public class GamePanel extends JPanel implements Runnable {
 
         count++;
 
-        if (player1.x == 150 && player1.y == 200 && num == 0) {
-
+        if (((player1.x == 150 && player1.y == 200) || (player1.x == 150 && player1.y == 460)) && num == 0) {
             this.step[0][0] = (int) (Math.random() * (2) + 0);
-            if (step[0][0] == 1) {
-                mark = 1;
+            num++;
+        }
 
-            } else {
-                mark = 0;
-            }
-            num++;
+        if (step[0][0] == 1 && (player1.x == 150 && player1.y == 200)) {
+
+            mark = 1;
         }
-        if (player1.x == 150 && player1.y == 460 && num == 0) {
-            this.step[1][0] = (int) (Math.random() * 2);
-            if (step[1][0] == 1) {
-                mark = 2;
-            } else {
-                mark = 0;
-            }
-            num++;
+
+        if (step[0][0] == 0 && (player1.x == 150 && player1.y == 460)) {
+            mark = 2;
         }
-        if (player1.x == 350 && player1.y == 200 && num == 1) {
+
+
+        if (((player1.x == 350 && player1.y == 200) || (player1.x == 350 && player1.y == 460)) && num == 1) {
             this.step[0][1] = (int) (Math.random() * 2);
-            if (step[0][1] == 1) {
-                mark = 3;
-            } else {
-                mark = 0;
-            }
             num++;
+        }
+        if (step[0][1] == 1 && (player1.x == 350 && player1.y == 200)) {
+
+            mark = 3;
         }
 
-        if (player1.x == 350 && player1.y == 460 && num == 1) {
-            this.step[1][1] = (int) (Math.random() * 2);
-            if (step[1][1] == 1) {
-                mark = 4;
-            } else {
-                mark = 0;
-                num++;
-            }
+        if (step[0][1] == 0 && (player1.x == 350 && player1.y == 460)) {
+            mark = 4;
         }
-        if (player1.x == 650 && player1.y == 200 && num == 2) {
+
+        if (((player1.x == 650 && player1.y == 200) || (player1.x == 650 && player1.y == 460)) && num == 2) {
             this.step[0][2] = (int) (Math.random() * 2);
-            if (step[0][2] == 1) {
-                mark = 5;
-            } else {
-                mark = 0;
-            }
             num++;
         }
-        if (player1.x == 650 && player1.y == 460 && num == 2) {
-            this.step[1][2] = (int) (Math.random() * 2);
-            if (step[1][2] == 1) {
-                mark = 6;
-            } else {
-                mark = 0;
-            }
-            num++;
+        if (step[0][2] == 1 && (player1.x == 650 && player1.y == 200)) {
+
+            mark = 5;
         }
-        if (player1.x == 1050 && player1.y == 200 && num == 3) {
+
+        if (step[0][2] == 0 && (player1.x == 650 && player1.y == 460)) {
+            mark = 6;
+        }
+
+        if (((player1.x == 1050 && player1.y == 200) || (player1.x == 1050 && player1.y == 460)) && num == 3) {
             this.step[0][3] = (int) (Math.random() * 2);
-            if (step[0][3] == 1) {
-                mark = 7;
-            } else {
-                mark = 0;
-            }
             num++;
         }
-        if (player1.x == 1050 && player1.y == 460 && num == 3) {
-            this.step[1][3] = (int) (Math.random() * 2);
-            if (step[1][3] == 1) {
-                mark = 8;
-            } else {
-                mark = 0;
-            }
-            num++;
+        if (step[0][3] == 1 && (player1.x == 1050 && player1.y == 200)) {
+
+            mark = 7;
         }
-        if (player1.x == 1350 && player1.y == 200 && num == 4) {
+
+        if (step[0][2] == 0 && (player1.x == 1050 && player1.y == 460)) {
+            mark = 8;
+        }
+
+        if (((player1.x == 1350 && player1.y == 200) || (player1.x == 1350 && player1.y == 460)) && num == 4) {
             this.step[0][4] = (int) (Math.random() * 2);
-            if (step[0][4] == 1) {
-                mark = 9;
-            } else {
-                mark = 0;
-            }
             num++;
         }
-        if (player1.x == 1350 && player1.y == 460 && num == 4) {
-            this.step[1][4] = (int) (Math.random() * 2);
-            if (step[1][4] == 1) {
-                mark = 10;
-            } else {
-                mark = 0;
-            }
-            num++;
+        if (step[0][4] == 1 && (player1.x == 1350 && player1.y == 200)) {
+
+            mark = 9;
         }
+
+        if (step[0][4] == 0 && (player1.x == 1350 && player1.y == 460)) {
+            mark = 10;
+        }
+
     }
+
 
 
 
@@ -186,44 +161,44 @@ public class GamePanel extends JPanel implements Runnable {
                 break;
             case 1 :
                 g.drawImage(break11,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
 
             case 2:
                 g.drawImage(break12,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 3:
                 g.drawImage(break21,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 4:
                 g.drawImage(break22,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 5:
                 g.drawImage(break31,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 6:
                 g.drawImage(break32,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 7:
                 g.drawImage(break41,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 8:
                 g.drawImage(break42,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 9:
                 g.drawImage(break51,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
             case 10:
                 g.drawImage(break52,0,0,1600,900,null);
-                gameThread.stop();
+               gameThread.stop();
                 break;
         }
 
