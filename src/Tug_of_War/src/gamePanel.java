@@ -104,7 +104,7 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
             opponentMove += plusAmount;
         } else if (opponentMove >= 1){
 
-            if(x <= 98 && x >= -105) {
+            if(x <= 60 && x >= -143) {
 
                 //update image
                 if (image == I1) {
