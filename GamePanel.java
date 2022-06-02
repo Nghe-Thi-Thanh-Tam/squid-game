@@ -11,6 +11,7 @@ public class GamePanel extends JPanel implements Runnable {
     final int scale = 3;
     int FPS = 60;
 
+
     public final int tileSize = originalTitleSize * scale;
     final int maxScreenCol = 100;
     final int maxScreenRow = 600;
@@ -54,10 +55,9 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     public GamePanel() {
-        this.setPreferredSize(new Dimension(screenWidth, screenHeight));
+        this.setPreferredSize(new Dimension(1000, 500));
         this.setBackground(Color.white);
         this.setDoubleBuffered(true);
-        this.addKeyListener(keyH);
         this.setFocusable(true);
 
     }
@@ -74,9 +74,10 @@ public class GamePanel extends JPanel implements Runnable {
 
         count++;
 
-        if (((player1.x == 150 && player1.y == 200) || (player1.x == 150 && player1.y == 460)) && num == 0) {
+        if ( num == 0) {
             this.step[0][0] = (int) (Math.random() * (2) + 0);
             num++;
+            System.out.println(step[0][0]);
         }
 
         if (step[0][0] == 1 && (player1.x == 150 && player1.y == 200)) {
@@ -89,9 +90,10 @@ public class GamePanel extends JPanel implements Runnable {
         }
 
 
-        if (((player1.x == 350 && player1.y == 200) || (player1.x == 350 && player1.y == 460)) && num == 1) {
+        if ( num == 1) {
             this.step[0][1] = (int) (Math.random() * 2);
             num++;
+            System.out.println(step[0][1]);
         }
         if (step[0][1] == 1 && (player1.x == 350 && player1.y == 200)) {
 
@@ -144,68 +146,58 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
 
-
-
-
-
-
-
-
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
         switch (mark){
             case 0:
-                g.drawImage(notbreak,0,0,1600,900,null);
+                g.drawImage(notbreak,0,0,1000,500,null);
 
                 break;
             case 1 :
-                g.drawImage(break11,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break11,0,0,1000,500,null);
+                gameThread.stop();
                 break;
 
             case 2:
-                g.drawImage(break12,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break12,0,0,1000,500,null);
+                gameThread.stop();
                 break;
             case 3:
-                g.drawImage(break21,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break21,0,0,1000,500,null);
+                gameThread.stop();
                 break;
             case 4:
-                g.drawImage(break22,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break22,0,0,1000,500,null);
+                gameThread.stop();
                 break;
             case 5:
-                g.drawImage(break31,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break31,0,0,1000,500,null);
+                gameThread.stop();
                 break;
             case 6:
-                g.drawImage(break32,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break32,0,0,1000,500,null);
+                gameThread.stop();
                 break;
             case 7:
-                g.drawImage(break41,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break41,0,0,1000,500,null);
+              gameThread.stop();
                 break;
             case 8:
-                g.drawImage(break42,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break42,0,0,1000,500,null);
+                gameThread.stop();
                 break;
             case 9:
-                g.drawImage(break51,0,0,1600,900,null);
+                g.drawImage(break51,0,0,1000,500,null);
                gameThread.stop();
                 break;
             case 10:
-                g.drawImage(break52,0,0,1600,900,null);
-               gameThread.stop();
+                g.drawImage(break52,0,0,1000,500,null);
+                gameThread.stop();
                 break;
         }
 
         player1.draw(g2);
         g2.dispose();
     }
-
-
-
 }
