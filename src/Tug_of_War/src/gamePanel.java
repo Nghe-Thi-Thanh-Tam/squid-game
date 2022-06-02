@@ -6,11 +6,14 @@ import javax.swing.*;
 
 public class gamePanel extends JPanel implements MouseListener, Runnable {
 
-    Image I1 = new ImageIcon("res\\1.png").getImage().getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
-    Image I2 = new ImageIcon("res\\2.png").getImage().getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
+    Image I1 = new ImageIcon("res\\1.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
+    Image I2 = new ImageIcon("res\\2.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
 
     //only in case player is not clicking
-    Image I3 = new ImageIcon("res\\special.png").getImage().getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
+    Image I3 = new ImageIcon("res\\special.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
+    Image win = new ImageIcon("res\\win.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
+    Image lose = new ImageIcon("res\\lose.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
+
     Image image= I1;
     Image background = new ImageIcon("res\\background.png").getImage();
     Image num0 = new ImageIcon("res\\num_0.png").getImage();
@@ -20,14 +23,13 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
 
     ArrayList<Image> countDownNumber = new ArrayList<>();
     int numberOfCLick=0;
+    int maximumDifferenceOfClicks = 50;
     int totalClickDifference = 0;
     int x =  -33; //-(int) (157 * 0.5 / 2) + 6;
     final int y = -116; //-(int) (461 * 0.5 / 2) + 1;
     Thread gameThread;
     int FPS = 70;
     double opponentMove=0;
-    int opponentStepCount=0;
-
 
     public gamePanel() {
         this.addMouseListener(this);
@@ -81,11 +83,15 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            if(totalClickDifference == -12 ) {
+            if(totalClickDifference == -maximumDifferenceOfClicks ) {
+                image = lose;
                 System.out.println("You lost");
+                repaint();
                 break;
-            } else if (totalClickDifference == 12) {
+            } else if (totalClickDifference == maximumDifferenceOfClicks) {
+                image = win;
                 System.out.println("You won");
+                repaint();
                 break;
             }
         }
@@ -93,7 +99,7 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
     }
 
     public void update() {
-        double plusAmount = 0.0000075;
+        double plusAmount = 0.000005;
         if (opponentMove < 1){
             opponentMove += plusAmount;
         } else if (opponentMove >= 1){
@@ -127,7 +133,7 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
         if (countDownNumber.size() == 0) {
 
             g.drawImage(background, 0, 0, width, height, this);
-            g.drawImage(image, x, y, this);
+            g.drawImage(image, x, y,(int)(700*1.5), (int)(461*1.5), this);
             g.setColor(Color.RED);
             g.drawLine(width / 2, 0, width / 2, height);
         }
@@ -155,7 +161,7 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
     public void mouseReleased(MouseEvent e) {
         if (MouseEvent.MOUSE_RELEASED == 502) {
             image = I1;
-            if(x <= 60 && x >= -105) {
+            if(x <= 98 && x >= -105) {
                 x += 2;
                 totalClickDifference++;
             }
