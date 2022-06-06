@@ -1,6 +1,7 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -59,7 +60,7 @@ public class GamePanel extends JPanel implements Runnable {
         this.setBackground(Color.white);
         this.setDoubleBuffered(true);
         this.setFocusable(true);
-
+        this.addKeyListener(keyH);
     }
 
     public void startGameThread() {
@@ -80,12 +81,12 @@ public class GamePanel extends JPanel implements Runnable {
             System.out.println(step[0][0]);
         }
 
-        if (step[0][0] == 1 && (player1.x == 150 && player1.y == 200)) {
+        if (step[0][0] == 1 && (player1.x == 48 && player1.y == 88)) {
 
             mark = 1;
         }
 
-        if (step[0][0] == 0 && (player1.x == 150 && player1.y == 460)) {
+        if (step[0][0] == 0 && (player1.x == 48 && player1.y == 240)) {
             mark = 2;
         }
 
@@ -95,51 +96,54 @@ public class GamePanel extends JPanel implements Runnable {
             num++;
             System.out.println(step[0][1]);
         }
-        if (step[0][1] == 1 && (player1.x == 350 && player1.y == 200)) {
+        if (step[0][1] == 1 && (player1.x == 236 && player1.y == 88)) {
 
             mark = 3;
         }
 
-        if (step[0][1] == 0 && (player1.x == 350 && player1.y == 460)) {
+        if (step[0][1] == 0 && (player1.x == 236 && player1.y == 240)) {
             mark = 4;
         }
 
-        if (((player1.x == 650 && player1.y == 200) || (player1.x == 650 && player1.y == 460)) && num == 2) {
+        if (  num == 2) {
             this.step[0][2] = (int) (Math.random() * 2);
             num++;
+            System.out.println(step[0][2]);
         }
-        if (step[0][2] == 1 && (player1.x == 650 && player1.y == 200)) {
+        if (step[0][2] == 1 && (player1.x == 420 && player1.y == 88)) {
 
             mark = 5;
         }
 
-        if (step[0][2] == 0 && (player1.x == 650 && player1.y == 460)) {
+        if (step[0][2] == 0 && (player1.x == 420 && player1.y == 240)) {
             mark = 6;
         }
 
-        if (((player1.x == 1050 && player1.y == 200) || (player1.x == 1050 && player1.y == 460)) && num == 3) {
+        if ( num == 3) {
             this.step[0][3] = (int) (Math.random() * 2);
             num++;
+            System.out.println(step[0][3]);
         }
-        if (step[0][3] == 1 && (player1.x == 1050 && player1.y == 200)) {
+        if (step[0][3] == 1 && (player1.x == 604 && player1.y == 88)) {
 
             mark = 7;
         }
 
-        if (step[0][2] == 0 && (player1.x == 1050 && player1.y == 460)) {
+        if (step[0][3] == 0 && (player1.x == 604 && player1.y == 240)) {
             mark = 8;
         }
 
-        if (((player1.x == 1350 && player1.y == 200) || (player1.x == 1350 && player1.y == 460)) && num == 4) {
+        if ( num == 4) {
             this.step[0][4] = (int) (Math.random() * 2);
             num++;
+            System.out.println(step[0][4]);
         }
-        if (step[0][4] == 1 && (player1.x == 1350 && player1.y == 200)) {
+        if (step[0][4] == 1 && (player1.x == 796 && player1.y == 88)) {
 
             mark = 9;
         }
 
-        if (step[0][4] == 0 && (player1.x == 1350 && player1.y == 460)) {
+        if (step[0][4] == 0 && (player1.x == 796 && player1.y == 240)) {
             mark = 10;
         }
 
