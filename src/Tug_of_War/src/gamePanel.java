@@ -1,44 +1,44 @@
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.io.IOException;
 import java.util.ArrayList;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
-public class gamePanel extends JPanel implements MouseListener, Runnable {
+public class gamePanel extends JPanel implements Runnable {
+    OpponentTeam opponent = new OpponentTeam();
+    PlayerTeam player = new PlayerTeam();
 
-    Image I1 = new ImageIcon("res\\1.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
-    Image I2 = new ImageIcon("res\\2.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
+    Image image = new ImageIcon("res\\1.png").getImage();
+    Image win = new ImageIcon("res\\win.png").getImage();
+    Image lose = new ImageIcon("res\\lose.png").getImage();
 
-    //only in case player is not clicking
-    Image I3 = new ImageIcon("res\\special.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
-    Image win = new ImageIcon("res\\win.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
-    Image lose = new ImageIcon("res\\lose.png").getImage();//.getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);
-
-    Image image= I1;
     Image background = new ImageIcon("res\\background.png").getImage();
-    Image num0 = new ImageIcon("res\\num_0.png").getImage();
-    Image num1 = new ImageIcon("res\\num_1.png").getImage();
-    Image num2 = new ImageIcon("res\\num_2.png").getImage();
-    Image num3 = new ImageIcon("res\\num_3.png").getImage();
+    Image num0 = new ImageIcon("res\\countDown\\num_0.png").getImage();
+    Image num1 = new ImageIcon("res\\countDown\\num_1.png").getImage();
+    Image num2 = new ImageIcon("res\\countDown\\num_2.png").getImage();
+    Image num3 = new ImageIcon("res\\countDown\\num_3.png").getImage();
 
+
+    Sound sound = new Sound();
     ArrayList<Image> countDownNumber = new ArrayList<>();
-    int numberOfCLick=0;
-    int maximumDifferenceOfClicks = 50;
-    int totalClickDifference = 0;
-    int x =  -33; //-(int) (157 * 0.5 / 2) + 6;
+    int maximumDifference = 45;
+    int totalMoveTimesDifference = 0;
+    private int x =  -33; //-(int) (157 * 0.5 / 2) + 6;
     final int y = -116; //-(int) (461 * 0.5 / 2) + 1;
     Thread gameThread;
     int FPS = 70;
-    double opponentMove=0;
 
     public gamePanel() {
-        this.addMouseListener(this);
         this.setFocusable(true);
+        this.addMouseListener(player);
 
         countDownNumber.add(num0);
         countDownNumber.add(num1);
         countDownNumber.add(num2);
         countDownNumber.add(num3);
+
+
     }
 
     public void startGameThread() {
@@ -49,28 +49,43 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
 
     @Override
     public void run() {
+
         double drawInterval = 1000000000/FPS;
         double nextDrawTime = System.nanoTime() + drawInterval;
         int timeWait = 3;
 
-        //counting down
         while (gameThread != null) {
 
-            if(timeWait >= 0){
-                System.out.println(timeWait);
-                timeWait--;
+            //counting down
+            if(timeWait > 0){
+
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
+                timeWait--;
+
             }
 
-            //update characters' status
-            update();
 
-            //repaint after remainingTime(millisecond)
-            repaint();
+            //main updates
+            if (totalMoveTimesDifference == -maximumDifference) {
+                image = lose;
+                System.out.println("You lose");
+                repaint();
+                break;
+            } else if (totalMoveTimesDifference == maximumDifference) {
+                image = win;
+                System.out.println("You win");
+                repaint();
+                break;
+            } else {
+
+                update();
+                repaint();
+            }
+
 
             //setting FPS
             try {
@@ -83,44 +98,33 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            if(totalClickDifference == -maximumDifferenceOfClicks ) {
-                image = lose;
-                System.out.println("You lost");
-                repaint();
-                break;
-            } else if (totalClickDifference == maximumDifferenceOfClicks) {
-                image = win;
-                System.out.println("You won");
-                repaint();
-                break;
-            }
         }
 
     }
 
     public void update() {
-        double plusAmount = 0.000005;
-        if (opponentMove < 1){
-            opponentMove += plusAmount;
-        } else if (opponentMove >= 1){
 
-            if(x <= 60 && x >= -105) {
+<<<<<<< HEAD
+        if(x <= 60 && x >= -143) {
+=======
+            if(x <= 60 && x >= -143) {
+>>>>>>> b37ab5aa2daa89f22e67afbd5f8714559961497d
 
-                //update image
-                if (image == I1) {
-                    image = I3;
-                }
-                else image = I1;
-
-                //update position
-                x -= 2;
-
-                totalClickDifference--;
-                opponentMove = 0;
+            //update image;
+            if (player.isClicked) {
+                image = player.updateImage();
             }
+            else image = opponent.updateImage();
+
+            //update position
+            opponent.updateConditionMove();
+            x -= opponent.checkConditionMove();
+            x += player.checkMoved();
+
+
+
+            totalMoveTimesDifference = player.getTotalMoveTimes() - opponent.getTotalMoveTimes();
         }
-
-
     }
 
     public void paintComponent(Graphics g) {
@@ -135,7 +139,6 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
             g.drawImage(background, 0, 0, width, height, this);
             g.drawImage(image, x, y,(int)(700*1.5), (int)(461*1.5), this);
             g.setColor(Color.RED);
-            g.drawLine(width / 2, 0, width / 2, height);
         }
 
         else {
@@ -148,46 +151,13 @@ public class gamePanel extends JPanel implements MouseListener, Runnable {
         g.dispose();
     }
 
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-        if (MouseEvent.MOUSE_PRESSED == 501) {
-            image = I2;
-            numberOfCLick++;
-        }
+    public void playSound(int i) {
+        sound.setFile(i);
+        sound.play();
     }
 
-    @Override
-    public void mouseReleased(MouseEvent e) {
-        if (MouseEvent.MOUSE_RELEASED == 502) {
-            image = I1;
-            if(x <= 98 && x >= -105) {
-                x += 2;
-                totalClickDifference++;
-            }
-        }
+    public void stopSound() {
+        sound.stop();
     }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-    }
-
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
-
-
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-
-
-
-
-
 }
+
