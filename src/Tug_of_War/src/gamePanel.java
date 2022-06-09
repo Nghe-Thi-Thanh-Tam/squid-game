@@ -1,8 +1,5 @@
 import java.awt.*;
-import java.io.IOException;
 import java.util.ArrayList;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
 public class gamePanel extends JPanel implements Runnable {
@@ -19,15 +16,17 @@ public class gamePanel extends JPanel implements Runnable {
     Image num2 = new ImageIcon("res\\countDown\\num_2.png").getImage();
     Image num3 = new ImageIcon("res\\countDown\\num_3.png").getImage();
 
-
+    Image YouLose = new ImageIcon("res\\YouLose.png").getImage().getScaledInstance((int)(700*1.5-30), (int)(461*1.5-30), Image.SCALE_DEFAULT);
+    Image YouWon = new ImageIcon("res\\YouWon.png").getImage().getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);;
+    Image endGameImage = null;
     Sound sound = new Sound();
     ArrayList<Image> countDownNumber = new ArrayList<>();
-    int maximumDifference = 45;
-    int totalMoveTimesDifference = 0;
+    private int maximumDifference = 45;
+    private int totalMoveTimesDifference = 0;
     private int x =  -33; //-(int) (157 * 0.5 / 2) + 6;
-    final int y = -116; //-(int) (461 * 0.5 / 2) + 1;
+    private final int y =   -116; //-(int) (461 * 0.5 / 2) + 1;
     Thread gameThread;
-    int FPS = 70;
+    private int FPS = 70;
 
     public gamePanel() {
         this.setFocusable(true);
@@ -72,12 +71,24 @@ public class gamePanel extends JPanel implements Runnable {
             //main updates
             if (totalMoveTimesDifference == -maximumDifference) {
                 image = lose;
-                System.out.println("You lose");
+                repaint();
+
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+                endGameImage = YouLose;
                 repaint();
                 break;
             } else if (totalMoveTimesDifference == maximumDifference) {
                 image = win;
-                System.out.println("You win");
+                repaint();
+
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+                endGameImage = YouWon;
                 repaint();
                 break;
             } else {
@@ -113,8 +124,8 @@ public class gamePanel extends JPanel implements Runnable {
             else image = opponent.updateImage();
 
             //update position
-            opponent.updateConditionMove();
-            x -= opponent.checkConditionMove();
+            opponent.updateConditionToMove();
+            x -= opponent.checkConditionToMove();
             x += player.checkMoved();
 
 
@@ -134,7 +145,9 @@ public class gamePanel extends JPanel implements Runnable {
 
             g.drawImage(background, 0, 0, width, height, this);
             g.drawImage(image, x, y,(int)(700*1.5), (int)(461*1.5), this);
-            g.setColor(Color.RED);
+            if (endGameImage != null) {
+                g.drawImage(endGameImage, -15, y,this);
+            }
         }
 
         else {
