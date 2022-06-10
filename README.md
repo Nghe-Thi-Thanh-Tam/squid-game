@@ -67,11 +67,13 @@ Java
 ![image](https://user-images.githubusercontent.com/91868406/164366225-3240c794-98cb-4e15-a6bd-0ba001f01ed2.png)
 
 **UML for each game**
+- Red light, Green light
+![UML squidgame](https://user-images.githubusercontent.com/93000383/173155381-9db768aa-d522-42b1-8d0a-d3b4783b25a6.png)
 
 - Tug of war
-
 ![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
 
 - Glass bridge 
 ![image](https://user-images.githubusercontent.com/91868450/173116364-3a3ca030-fb3a-4c2b-8e7b-0f39d2ecd63f.png)
+
 
