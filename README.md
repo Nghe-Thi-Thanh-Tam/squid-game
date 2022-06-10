@@ -66,4 +66,10 @@ Java
 
 ![image](https://user-images.githubusercontent.com/91868406/164366225-3240c794-98cb-4e15-a6bd-0ba001f01ed2.png)
 
+**UML for each game**
+
+- Tug of war
+
+![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
+
 
