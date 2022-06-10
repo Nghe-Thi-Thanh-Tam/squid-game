@@ -53,11 +53,11 @@ public class GamePanel extends JPanel implements Runnable {
     public void stopGameThread(){
         gameThread.stop();
     }
-
+    public Map map = new Map(); //old line
     public Player player1 = new Player(this,keyH);
     public Catcher catcher = new Catcher(this);
-//    public panelBot panelBot = new panelBot(width, height, null);
-    //public Map map = new Map(); //old line
+    public panelBot panelBot = new panelBot(width, height, map);
+
 
     public void update(){
          player1.update();
@@ -91,9 +91,8 @@ public class GamePanel extends JPanel implements Runnable {
         g2.drawImage(npc3, width - 3*width/9 + iX, iY + offsetY, iSize, iSize, this);
         catcher.drawCatcher(g2);
         player1.draw(g2);
-//        g2.fillRect(0, getHeight()/9-1, width, 3);
-//        g2.fillRect(0, getHeight()-getHeight()/9 -1, width, 3);
-//        panelBot.paint(g2);
+
+        panelBot.paintBot(g2);
     }
     @Override
     public void run() {

@@ -60,13 +60,13 @@ public class panelBot extends JPanel implements ActionListener {
 
     }
 
-    public void paint(Graphics g) {
-        super.paintComponent(g);
+    public void paintBot(Graphics g) {
+//        super.paintComponent(g);
 
-        System.out.println(map.startY + "  " + map.finishY);
+//        System.out.println(map.startY + "  " + map.finishY);
 
-        g.fillRect(0, getHeight()/9-1, width, 3);
-        g.fillRect(0, getHeight()-getHeight()/9 -1, width, 3);
+//        g.fillRect(0, getHeight()/9-1, width, 3);
+//        g.fillRect(0, getHeight()-getHeight()/9 -1, width, 3);
 
         for (int i = 0; i < bot.size(); i++) {
             bot.get(i).draw(g, this);
