@@ -72,4 +72,6 @@ Java
 
 ![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
 
+- Glass bridge 
+![image](https://user-images.githubusercontent.com/91868450/173116364-3a3ca030-fb3a-4c2b-8e7b-0f39d2ecd63f.png)
 
