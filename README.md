@@ -68,7 +68,8 @@ Java
 
 **UML for each game**
 - Red light, Green light
-![UML squidgame](https://user-images.githubusercontent.com/93000383/173155381-9db768aa-d522-42b1-8d0a-d3b4783b25a6.png)
+![UML squidgame](https://user-images.githubusercontent.com/93000383/173155656-d98eb4da-41c6-40e7-bee0-b1464e12dab6.png)
+
 
 - Tug of war
 ![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
