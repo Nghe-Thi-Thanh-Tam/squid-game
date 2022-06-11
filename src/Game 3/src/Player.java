@@ -9,10 +9,8 @@ import static javax.imageio.ImageIO.read;
 
 
 public class Player extends Entity  {
-    GamePanel gp;
-   private int mark=0;
+    private GamePanel gp;
     public KeyHandler keyH;
-    int count=0;
     public Player(GamePanel gp, KeyHandler keyH) {
         this.gp = gp;
         this.keyH = keyH;
