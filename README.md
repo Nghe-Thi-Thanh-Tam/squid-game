@@ -83,6 +83,7 @@ Ky: code for catcher
 ![image](https://user-images.githubusercontent.com/91868406/164366225-3240c794-98cb-4e15-a6bd-0ba001f01ed2.png)
 
 **Unfinished feature**
+**No LogicGame due to bugs**
 
 ## Tug of war
 
