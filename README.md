@@ -24,7 +24,7 @@ We are **JABON**
 
 **Motivation**
 
-Several months ago, there was a viral movie on Netflix called Squid Game, and we watched it and found it quite intereesting to implement a 2D game for this movie. So, we decided to do it.
+Several months ago, there was a viral movie on Netflix called Squid Game, and we watched it and found it quite interesting to implement a 2D game for this movie. The game is simple to understand, and fun to play. So, we wanted to take the challenge to do this game. However, we faced many new concepts in the process of making this game. At first, we proposed to make only 1 game out of the 5 games, but Tom said it would be more challenging if player play the whole sequence of Squid Game. Therefore, we made 2 more games. We wanted to make a game feature 8-bit art of style.
 
 ## CONCEPT:
 This includes 3 games:
