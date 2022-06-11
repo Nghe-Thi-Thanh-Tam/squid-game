@@ -8,18 +8,18 @@ public class gamePanel extends JPanel implements Runnable {
     OpponentTeam opponent = new OpponentTeam();
     PlayerTeam player = new PlayerTeam();
 
-    Image image = new ImageIcon("res\\1.png").getImage();
-    Image win = new ImageIcon("res\\win.png").getImage();
-    Image lose = new ImageIcon("res\\lose.png").getImage();
+    Image image = new ImageIcon("src\\Tug_of_War\\res\\1.png").getImage();
+    Image win = new ImageIcon("src\\Tug_of_War\\res\\win.png").getImage();
+    Image lose = new ImageIcon("src\\Tug_of_War\\res\\lose.png").getImage();
 
-    Image background = new ImageIcon("res\\background.png").getImage();
-    Image num0 = new ImageIcon("res\\countDown\\num_0.png").getImage();
-    Image num1 = new ImageIcon("res\\countDown\\num_1.png").getImage();
-    Image num2 = new ImageIcon("res\\countDown\\num_2.png").getImage();
-    Image num3 = new ImageIcon("res\\countDown\\num_3.png").getImage();
+    Image background = new ImageIcon("src\\Tug_of_War\\res\\background.png").getImage();
+    Image num0 = new ImageIcon("src\\Tug_of_War\\res\\countDown\\num_0.png").getImage();
+    Image num1 = new ImageIcon("src\\Tug_of_War\\res\\countDown\\num_1.png").getImage();
+    Image num2 = new ImageIcon("src\\Tug_of_War\\res\\countDown\\num_2.png").getImage();
+    Image num3 = new ImageIcon("src\\Tug_of_War\\res\\countDown\\num_3.png").getImage();
 
-    Image YouLose = new ImageIcon("res\\YouLose.png").getImage().getScaledInstance((int)(700*1.5-30), (int)(461*1.5-30), Image.SCALE_DEFAULT);
-    Image YouWon = new ImageIcon("res\\YouWon.png").getImage().getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);;
+    Image YouLose = new ImageIcon("src\\Tug_of_War\\res\\YouLose.png").getImage().getScaledInstance((int)(700*1.5-30), (int)(461*1.5-30), Image.SCALE_DEFAULT);
+    Image YouWon = new ImageIcon("src\\Tug_of_War\\res\\YouWon.png").getImage().getScaledInstance((int)(700*1.5), (int)(461*1.5), Image.SCALE_DEFAULT);;
     Image endGameImage = null;
     Sound sound = new Sound();
     ArrayList<Image> countDownNumber = new ArrayList<>();

@@ -4,10 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class OpponentTeam {
-    Image I1 = new ImageIcon("res\\1.png").getImage();
+    Image I1 = new ImageIcon("src\\Tug_of_War\\res\\1.png").getImage();
 
     //only in case player is not clicking
-    Image I2 = new ImageIcon("res\\special.png").getImage();
+    Image I2 = new ImageIcon("src\\Tug_of_War\\res\\special.png").getImage();
     Image image = I1;
     public int totalMoveTimes = 0;
     private final double speed = 0.000005;
