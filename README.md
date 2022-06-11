@@ -11,7 +11,10 @@ OOP final project
 
           Nguyễn Hoàng Thiên Phúc
 
-**CONCEPT:**
+##CONCEPT:##
+This includes 3 games:
+
+###Red light green light:###
 This game have two team, 👧the catcher and🏃the player.
 
 🟩 The player _can only_ run when the catcher said **green light** and face **the back**.
@@ -58,6 +61,9 @@ Java
 
 **Previous Implementation**
   https://github.com/0shuvo0/squidgame
+  
+**UML**
+![newuml](https://user-images.githubusercontent.com/93000383/173159124-f0f0c175-52f1-4d4d-b6d3-2d87e6fbd7ad.png)
 
 **Similar games**
 
