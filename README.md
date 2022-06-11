@@ -53,9 +53,13 @@ Java
 
 **Task allocation**
 Quang:
+
 Tam: create images, code for bots
+
 Phuc: code for player
+
 Ky: code for catcher
+
 
 **Previous Implementation**
   https://github.com/0shuvo0/squidgame
