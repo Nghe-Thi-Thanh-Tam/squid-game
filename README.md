@@ -123,6 +123,8 @@ The goal of the game was for players to successfully cross the bridges by jumpin
 This game has only 1 player and you use keyboard to make player move.
 	Press W to move up.
 	Press S to move down
+Try to guess and pick the safe position 
+The game ends when the player take over the glass bridge
 
 **Unfinished features**
 :mute: SFX
