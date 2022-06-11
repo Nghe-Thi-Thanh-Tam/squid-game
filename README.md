@@ -102,12 +102,16 @@ This game has only 1 player and you use keyboard to make player move.
 **Unfinished features**
 :mute: SFX
 
-**Language** 
-Java
 Jump animation
 
+**Language** 
+Java
+
+
 **Task allocation**
-Tam: create images; Phuc: code for map & main; Ky: code for player
+Tam: create images; 
+Phuc: code for map & main;
+ Ky: code for player
 
 **UML**
 ![image](https://user-images.githubusercontent.com/91868450/173116364-3a3ca030-fb3a-4c2b-8e7b-0f39d2ecd63f.png)
