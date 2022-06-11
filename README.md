@@ -109,8 +109,10 @@ Java
 
 
 **Task allocation**
-Tam: create images; 
+Tam: create images;
+ 
 Phuc: code for map & main;
+
  Ky: code for player
 
 **UML**
