@@ -60,7 +60,8 @@ This game has two team, 👧the catcher and🏃the player.
 Java
 
 **Task allocation**
-Quang:
+
+Quang: code for main class
 
 Tam: create images, code for bots
 
