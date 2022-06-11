@@ -15,7 +15,7 @@ OOP final project
 This includes 3 games:
 
 ### Red light green light:
-This game have two team, 👧the catcher and🏃the player.
+This game has two team, 👧the catcher and🏃the player.
 
 🟩 The player _can only_ run when the catcher said **green light** and face **the back**.
 
@@ -36,13 +36,6 @@ This is a traditional game in many country - Vietnamese version of "Em bé tập
 - Bots playing with player(10+, but most of them will lose the game)
 
 **Secondary Feature(nice-to-have):**
-- Boosting items:
-          
-          Speed up and slow down drink
-          
-          Make the catcher froze for a certain of time
-          
-          One-time protecting shield
           
 - SFX (Game start, Game-over, Win,...)
 - Due to licensing fee, I won't get "Fly me to the moon in the game"
@@ -50,12 +43,6 @@ This is a traditional game in many country - Vietnamese version of "Em bé tập
 - Nice Backdrop(2D only)
 - Eliminate player animation.
 
-**Sub Task:**
-- Ensure a functional gui for each stage
-- code the main bot
-- code the playing bot
-- code the game control
--
 **Language**
 Java
 
@@ -72,14 +59,25 @@ Java
 
 ![image](https://user-images.githubusercontent.com/91868406/164366225-3240c794-98cb-4e15-a6bd-0ba001f01ed2.png)
 
-**UML for each game**
-- Red light, Green light
-![newuml](https://user-images.githubusercontent.com/93000383/173159124-f0f0c175-52f1-4d4d-b6d3-2d87e6fbd7ad.png)
+**Unfinished feature**
 
+## Tug of war
+
+**How to play:**
+This game has two team, player team (on the right) and opponent team (on the left)
+:computer_mouse: Use your mouse to click on the stream
+
+
+**Unfinished features**
+:mute: SFX
+
+**UML**
 - Tug of war
 ![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
 
-- Glass bridge 
+## Glass bridge
+
+**UML**
 ![image](https://user-images.githubusercontent.com/91868450/173116364-3a3ca030-fb3a-4c2b-8e7b-0f39d2ecd63f.png)
 
 
