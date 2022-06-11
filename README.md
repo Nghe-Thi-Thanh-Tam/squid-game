@@ -5,18 +5,26 @@ We are **JABON**
 
 **Team Member**
 
-          Nghê Thị Thanh Tâm ITITIU20302
-          email: ITITIU20302@student.hcmiu.edu.vn
+	Nghê Thị Thanh Tâm ITITIU20302
 
-          Nguyễn Vũ Nhật Quang ITITIU20149
+	email: ITITIU20302@student.hcmiu.edu.vn
 
-          Nguyễn Trần Trung Kỳ ITITIU20240
+	Nguyễn Vũ Nhật Quang ITITIU20149
 
-          Nguyễn Hoàng Thiên Phúc ITITIU20279
+	email: ITITIU201492@student.hcmiu.edu.vn
+
+	Nguyễn Trần Trung Kỳ ITITIU20240
+
+	email: ITITIU20240@student.hcmiu.edu.vn
+
+	Nguyễn Hoàng Thiên Phúc ITITIU20279
+
+	email: ITITIU20279@student.hcmiu.edu.vn
 
 
 **Motivation**
-Several months ago, there was a viral movie on Netflix called Squid Game, and we watched it and found it quite intereesting to make a game for this movie. So, we decided to do it.
+
+Several months ago, there was a viral movie on Netflix called Squid Game, and we watched it and found it quite intereesting to implement a 2D game for this movie. So, we decided to do it.
 
 ## CONCEPT:
 This includes 3 games:
@@ -75,6 +83,7 @@ Ky: code for catcher
 ![image](https://user-images.githubusercontent.com/91868406/164366225-3240c794-98cb-4e15-a6bd-0ba001f01ed2.png)
 
 **Unfinished feature**
+**No LogicGame due to bugs**
 
 ## Tug of war
 
@@ -145,8 +154,6 @@ Ky: code for player
 ## References: 
 https://www.youtube.com/watch?v=om59cwR7psI 
 
-
 https://www.youtube.com/watch?v=VpH33Uw-_0E
-
 
 https://www.youtube.com/watch?v=wT9uNGzMEM4
