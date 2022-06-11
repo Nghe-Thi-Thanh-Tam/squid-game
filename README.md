@@ -11,10 +11,10 @@ OOP final project
 
           Nguyễn Hoàng Thiên Phúc
 
-##CONCEPT:
+## CONCEPT:
 This includes 3 games:
 
-###Red light green light:
+### Red light green light:
 This game have two team, 👧the catcher and🏃the player.
 
 🟩 The player _can only_ run when the catcher said **green light** and face **the back**.
