@@ -69,6 +69,12 @@ Phuc: code for player
 
 Ky: code for catcher
 
+**Results:**
+
+![image](https://user-images.githubusercontent.com/91868406/173172780-f6bbadf6-1749-4d8c-a850-cee756efcc32.png)
+
+![image](https://user-images.githubusercontent.com/91868406/173172793-d6b7a9ba-3ea9-4ea3-a600-a1a90f1dcf16.png)
+
 
 **Previous Implementation**
   https://github.com/0shuvo0/squidgame
