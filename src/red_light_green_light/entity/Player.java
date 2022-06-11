@@ -1,15 +1,17 @@
-package entity;
+package src.red_light_green_light.entity;
 
-import src.GamePanel;
-import src.KeyHandler;
-import src.UtilityTool;
+import src.red_light_green_light.src.GamePanel;
+import src.red_light_green_light.src.KeyHandler;
+import src.red_light_green_light.src.UtilityTool;
 
 import java.awt.*;
 
 
 import javax.imageio.ImageIO;
+import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.Objects;
 
 import static javax.imageio.ImageIO.read;
 
@@ -51,7 +53,7 @@ public class Player extends Entity {
         UtilityTool uTool = new UtilityTool();
         BufferedImage image = null;
         try{
-            image = ImageIO.read(getClass().getResourceAsStream("/Player/squidChar_"+ imageName + ".png"));
+            image = ImageIO.read(getClass().getResourceAsStream("red_light_green_light/res/Player/squidChar_" + imageName + ".png"));
             double charScale = 3.50f;
             image = uTool.scaledImage(image, charScale * gp.tileSize, charScale * gp.tileSize);
         }catch (IOException e){

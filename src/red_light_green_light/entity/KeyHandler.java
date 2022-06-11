@@ -1,4 +1,4 @@
-package entity;
+package src.red_light_green_light.entity;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

@@ -1,6 +1,6 @@
-package entity;
+package src.red_light_green_light.entity;
 
-import src.GamePanel;
+import src.red_light_green_light.src.GamePanel;
 
 import java.awt.image.BufferedImage;
 

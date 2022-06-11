@@ -1,4 +1,4 @@
-package src;
+package src.red_light_green_light.src;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,10 +8,10 @@ class Map extends JPanel{
     private int height;
     protected int startY;
     protected int finishY;
-    protected Image npc1 = new ImageIcon("res\\NPC\\NPC(1).png").getImage();
+    protected Image npc1 = new ImageIcon("src\\red_light_green_light\\res\\NPC\\NPC(1).png").getImage();
 
-    protected Image npc2 = new ImageIcon("res\\NPC\\NPC(2).png").getImage();
-    protected Image npc3 = new ImageIcon("res\\NPC\\NPC(3).png").getImage();
+    protected Image npc2 = new ImageIcon("src\\red_light_green_light\\res\\NPC\\NPC(2).png").getImage();
+    protected Image npc3 = new ImageIcon("src\\red_light_green_light\\res\\NPC\\NPC(3).png").getImage();
 
     public void Map1draw(Graphics g) {
         //super.paintComponent(g);

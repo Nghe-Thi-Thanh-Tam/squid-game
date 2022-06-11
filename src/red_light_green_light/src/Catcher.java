@@ -1,8 +1,8 @@
-package src;
+package src.red_light_green_light.src;
 
-import src.GamePanel;
-import src.KeyHandler;
-import src.UtilityTool;
+import src.red_light_green_light.src.GamePanel;
+import src.red_light_green_light.src.KeyHandler;
+import src.red_light_green_light.src.UtilityTool;
 
 import java.awt.*;
 import javax.swing.*;
@@ -12,7 +12,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class Catcher extends entity.Entity {
+public class Catcher extends src.red_light_green_light.entity.Entity {
     public double x;
     public int y;
     public double charScale;
@@ -40,7 +40,7 @@ public class Catcher extends entity.Entity {
         UtilityTool uTool = new UtilityTool();
         BufferedImage image = null;
         try{
-            image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/Catcher/" + imageName + ".png")));
+            image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("src/red_light_green_light/res/Catcher/" + imageName + ".png")));
 
             image = uTool.scaledImage(image, charScale * gp.tileSize, charScale * gp.tileSize);
         }catch (IOException e){

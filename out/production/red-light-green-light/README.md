@@ -1,17 +1,19 @@
-# red-light-green-light
+# Squid Game
 OOP final project
 
 We are **JABON**
 
 **Team Member**
 
-          Nghê Thị Thanh Tâm
+          Nghê Thị Thanh Tâm ITITIU20302
+          email: ITITIU20302@student.hcmiu.edu.vn
 
-          Nguyễn Vũ Nhật Quang
+          Nguyễn Vũ Nhật Quang ITITIU20149
 
-          Nguyễn Trần Trung Kỳ
+          Nguyễn Trần Trung Kỳ ITITIU20240
 
-          Nguyễn Hoàng Thiên Phúc
+          Nguyễn Hoàng Thiên Phúc ITITIU20279
+
 
 **Motivation**
 
@@ -49,6 +51,12 @@ This game has two team, 👧the catcher and🏃the player.
 **Language**
 Java
 
+**Task allocation**
+Quang:
+Tam: create images, code for bots
+Phuc: code for player
+Ky: code for catcher
+
 **Previous Implementation**
   https://github.com/0shuvo0/squidgame
   
@@ -74,19 +82,47 @@ This game has two team, player team (on the right) and opponent team (on the lef
 **Unfinished features**
 :mute: SFX
 
+**Language**
+Java
+
+**Task allocation**
+Tam: code, create images
+
 **UML**
 - Tug of war
 ![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
 
 ## Glass bridge
+
 **How to play:**
-The goal of the game was for players to successfully cross the bridges by jumping across the tempered glass while avoiding the regular glass. Use W-key to move to the left side and S-key to move to the right side. 
+
+The goal of the game was for players to successfully cross the bridges by jumping across the tempered glass while avoiding the regular glass
+This game has only 1 player and you use keyboard to make player move.
+	Press W to move up.
+	Press S to move down
 
 **Unfinished features**
-
 :mute: SFX
 
 Jump animation
+
+**Language** 
+
+Java
+
+
+**Task allocation**
+
+Tam: create images;
+ 
+Phuc: code for map & main;
+
+ Ky: code for player
+
+
+
+![image](https://user-images.githubusercontent.com/91868450/173168691-2b7f6020-1c83-4898-8561-b8fb4024a995.png)
+
 
 **UML**
 ![image](https://user-images.githubusercontent.com/91868450/173116364-3a3ca030-fb3a-4c2b-8e7b-0f39d2ecd63f.png)

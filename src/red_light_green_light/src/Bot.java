@@ -1,5 +1,5 @@
-package src;
-import src.UtilityTool;
+package src.red_light_green_light.src;
+import src.red_light_green_light.src.UtilityTool;
 
 import java.awt.*;
 import javax.imageio.ImageIO;
@@ -39,14 +39,14 @@ public class Bot extends Rectangle {
         this.map = map;
     }
     public void loadImage() {
-        up = new ImageIcon("res\\Bot\\Up(1).png").getImage();
-        up1 = new ImageIcon("res\\Bot\\Up(2).png").getImage();
-        up2 = new ImageIcon("res\\Bot\\Up(3).png").getImage();
-        right1 = new ImageIcon("res\\Bot\\Right(1).png").getImage();
-        right2 = new ImageIcon("res\\Bot\\Right(2).png").getImage();
-        left1 = new ImageIcon("res\\Bot\\Left(1).png").getImage();
-        left2 = new ImageIcon("res\\Bot\\Left(2).png").getImage();
-        dead = new ImageIcon("res\\Bot\\dead.png").getImage();
+        up = new ImageIcon("src\\red_light_green_light\\res\\Bot\\Up(1).png").getImage();
+        up1 = new ImageIcon("src\\red_light_green_light\\res\\Bot\\Up(2).png").getImage();
+        up2 = new ImageIcon("src\\red_light_green_light\\res\\Bot\\Up(3).png").getImage();
+        right1 = new ImageIcon("src\\red_light_green_light\\res\\Bot\\Right(1).png").getImage();
+        right2 = new ImageIcon("src\\red_light_green_light\\res\\Bot\\Right(2).png").getImage();
+        left1 = new ImageIcon("src\\red_light_green_light\\res\\Bot\\Left(1).png").getImage();
+        left2 = new ImageIcon("src\\red_light_green_light\\res\\Bot\\Left(2).png").getImage();
+        dead = new ImageIcon("src\\red_light_green_light\\res\\Bot\\dead.png").getImage();
     }
     public void draw(Graphics g, ImageObserver o) {
         spriteIndex();

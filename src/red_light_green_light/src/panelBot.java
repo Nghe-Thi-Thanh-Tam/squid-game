@@ -1,4 +1,4 @@
-package src;
+package src.red_light_green_light.src;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

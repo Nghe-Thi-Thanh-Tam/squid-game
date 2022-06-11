@@ -1,6 +1,6 @@
-package src;
+package src.red_light_green_light.src;
 
-import entity.Player;
+import src.red_light_green_light.entity.Player;
 
 public class gameLogic{
     KeyHandler keyH = new KeyHandler();
