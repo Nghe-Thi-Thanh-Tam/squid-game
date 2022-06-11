@@ -76,13 +76,6 @@ Ky: code for catcher
 **UML**
 ![newuml](https://user-images.githubusercontent.com/93000383/173159124-f0f0c175-52f1-4d4d-b6d3-2d87e6fbd7ad.png)
 
-**Similar games**
-
-
-![image](https://user-images.githubusercontent.com/91868406/164357756-f3965c2a-67e1-45fc-9da8-9d287902ee67.png)
-
-![image](https://user-images.githubusercontent.com/91868406/164366225-3240c794-98cb-4e15-a6bd-0ba001f01ed2.png)
-
 **Unfinished feature**
 **No LogicGame due to bugs**
 
