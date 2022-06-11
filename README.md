@@ -55,6 +55,7 @@ This game has two team, 👧the catcher and🏃the player.
 - Multiplayer, possibly in the same wifi, not online.
 - Nice Backdrop(2D only)
 - Eliminate player animation.
+- Booster item to go faster or invisible in the game
 
 **Language**
 Java
