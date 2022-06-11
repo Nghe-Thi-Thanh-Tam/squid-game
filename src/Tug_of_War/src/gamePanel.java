@@ -1,3 +1,5 @@
+package src.Tug_of_War.src;
+
 import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;

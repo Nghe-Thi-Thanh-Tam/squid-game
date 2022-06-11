@@ -1,3 +1,5 @@
+package src.Tug_of_War.src;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.net.URL;
