@@ -95,6 +95,8 @@ Tam: code, create images
 ## Glass bridge
 
 **How to play:**
+
+The goal of the game was for players to successfully cross the bridges by jumping across the tempered glass while avoiding the regular glass
 This game has only 1 player and you use keyboard to make player move.
 	Press W to move up.
 	Press S to move down
