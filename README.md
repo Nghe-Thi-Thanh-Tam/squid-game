@@ -117,7 +117,7 @@ Tam: create images;
  
 Phuc: code for map & main;
 
- Ky: code for player
+Ky: code for player
 
 
 
@@ -129,6 +129,6 @@ Phuc: code for map & main;
 
 
 ## References:
-https://youtu.be/om59cwR7psI
-https://youtu.be/VpH33Uw-_0E
-https://youtu.be/wT9uNGzMEM4
+	https://youtu.be/om59cwR7psI
+	https://youtu.be/VpH33Uw-_0E
+	https://youtu.be/wT9uNGzMEM4
