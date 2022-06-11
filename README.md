@@ -83,7 +83,9 @@ This game has two team, player team (on the right) and opponent team (on the lef
 The goal of the game was for players to successfully cross the bridges by jumping across the tempered glass while avoiding the regular glass. Use W-key to move to the left side and S-key to move to the right side. 
 
 **Unfinished features**
+
 :mute: SFX
+
 Jump animation
 
 **UML**
