@@ -8,9 +8,9 @@ We are **JABON**
           Nghê Thị Thanh Tâm ITITIU20302
           email: ITITIU20302@student.hcmiu.edu.vn
 
-          Nguyễn Vũ Nhật Quang
+          Nguyễn Vũ Nhật Quang ITITIU20149
 
-          Nguyễn Trần Trung Kỳ
+          Nguyễn Trần Trung Kỳ ITITIU20240
 
           Nguyễn Hoàng Thiên Phúc ITITIU20279
 
