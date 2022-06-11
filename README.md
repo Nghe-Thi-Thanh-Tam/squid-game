@@ -130,8 +130,7 @@ Try to guess and pick the tempered glass
 The game ends when the player take over the glass bridge or pick the wrong glass panel
 
 **Unfinished features**
-:mute: SFX
-
+:mute: SFX; 
 Jump animation
 
 **Language** 
