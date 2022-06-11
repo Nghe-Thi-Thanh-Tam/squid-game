@@ -104,6 +104,7 @@ This game has only 1 player and you use keyboard to make player move.
 
 **Language** 
 Java
+Jump animation
 
 **Task allocation**
 Tam: create images; Phuc: code for map & main; Ky: code for player
