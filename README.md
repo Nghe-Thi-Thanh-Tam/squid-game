@@ -1,4 +1,4 @@
-# red-light-green-light
+# Squid Game
 OOP final project
 
 We are **JABON**
