@@ -44,7 +44,6 @@ public class PlayerTeam extends JPanel implements MouseListener {
         if (MouseEvent.MOUSE_RELEASED == 502) {
             setImage(I1);
             isClicked = false;
-            System.out.println("Mouse is clicked");
         }
     }
 

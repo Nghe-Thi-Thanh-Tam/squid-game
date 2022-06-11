@@ -53,9 +53,13 @@ Java
 
 **Task allocation**
 Quang:
+
 Tam: create images, code for bots
+
 Phuc: code for player
+
 Ky: code for catcher
+
 
 **Previous Implementation**
   https://github.com/0shuvo0/squidgame
@@ -75,8 +79,9 @@ Ky: code for catcher
 ## Tug of war
 
 **How to play:**
-This game has two team, player team (on the right) and opponent team (on the left)
-:computer_mouse: Use your mouse to click on the stream
+- This game has two team, player team (on the right) and opponent team (on the left)
+- :computer_mouse: Use your mouse to click on the stream
+- 
 
 
 **Unfinished features**
@@ -89,7 +94,7 @@ Java
 Tam: code, create images
 
 **UML**
-- Tug of war
+
 ![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
 
 ## Glass bridge
@@ -117,7 +122,7 @@ Tam: create images;
  
 Phuc: code for map & main;
 
- Ky: code for player
+Ky: code for player
 
 
 
@@ -128,3 +133,11 @@ Phuc: code for map & main;
 ![image](https://user-images.githubusercontent.com/91868450/173116364-3a3ca030-fb3a-4c2b-8e7b-0f39d2ecd63f.png)
 
 
+## References: 
+https://www.youtube.com/watch?v=om59cwR7psI 
+
+
+https://www.youtube.com/watch?v=VpH33Uw-_0E
+
+
+https://www.youtube.com/watch?v=wT9uNGzMEM4
