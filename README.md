@@ -80,9 +80,9 @@ Ky: code for catcher
 
 **How to play:**
 - This game has two team, player team (on the right) and opponent team (on the left)
-- :computer_mouse: Use your mouse to click on the stream
-- 
-
+- :computer_mouse: Use your mouse to click on the screen
+- Try to click fast to drag the opponent team
+- :trophy: The game ends when the outmost person of the team reach the wall behind, :skull: that's when the other team will all fall down.
 
 **Unfinished features**
 :mute: SFX
@@ -92,6 +92,15 @@ Java
 
 **Task allocation**
 Tam: code, create images
+
+**Results:**
+
+![image](https://user-images.githubusercontent.com/91868406/173172780-f6bbadf6-1749-4d8c-a850-cee756efcc32.png)
+
+![image](https://user-images.githubusercontent.com/91868406/173172793-d6b7a9ba-3ea9-4ea3-a600-a1a90f1dcf16.png)
+
+![image](https://user-images.githubusercontent.com/91868406/173172816-e57e67bf-141f-4495-bea5-d6de6bb12a4c.png)
+
 
 **UML**
 
