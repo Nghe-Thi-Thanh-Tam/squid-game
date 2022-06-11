@@ -16,7 +16,8 @@ We are **JABON**
 
 
 **Motivation**
-Several months ago, there was a viral movie on Netflix called Squid Game, and we watched it and found it quite intereesting to make a game for this movie. So, we decided to do it.
+
+Several months ago, there was a viral movie on Netflix called Squid Game, and we watched it and found it quite intereesting to implement a 2D game for this movie. So, we decided to do it.
 
 ## CONCEPT:
 This includes 3 games:
