@@ -5,17 +5,17 @@ We are **JABON**
 
 **Team Member**
 
-          Nghê Thị Thanh Tâm ITITIU20302
-          email: ITITIU20302@student.hcmiu.edu.vn
+Nghê Thị Thanh Tâm ITITIU20302
+email: ITITIU20302@student.hcmiu.edu.vn
 
-          Nguyễn Vũ Nhật Quang ITITIU20149
-	  email: ITITIU201492@student.hcmiu.edu.vn
+Nguyễn Vũ Nhật Quang ITITIU20149
+email: ITITIU201492@student.hcmiu.edu.vn
 
-          Nguyễn Trần Trung Kỳ ITITIU20240
-	  email: ITITIU20240@student.hcmiu.edu.vn
+Nguyễn Trần Trung Kỳ ITITIU20240
+email: ITITIU20240@student.hcmiu.edu.vn
 
-          Nguyễn Hoàng Thiên Phúc ITITIU20279
-	  email: ITITIU20279@student.hcmiu.edu.vn
+Nguyễn Hoàng Thiên Phúc ITITIU20279
+email: ITITIU20279@student.hcmiu.edu.vn
 
 
 **Motivation**
