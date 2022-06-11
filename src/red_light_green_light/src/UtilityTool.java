@@ -1,4 +1,4 @@
-package src;
+package src.red_light_green_light.src;
 
 import java.awt.image.BufferedImage;
 import java.awt.Graphics2D;

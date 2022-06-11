@@ -16,7 +16,7 @@ We are **JABON**
 
 
 **Motivation**
-
+Several months ago, there was a viral movie on Netflix called Squid Game, and we watched it and found it quite intereesting to make a game for this movie. So, we decided to do it.
 
 ## CONCEPT:
 This includes 3 games:
@@ -80,9 +80,9 @@ Ky: code for catcher
 
 **How to play:**
 - This game has two team, player team (on the right) and opponent team (on the left)
-- :computer_mouse: Use your mouse to click on the stream
-- 
-
+- :computer_mouse: Use your mouse to click on the screen
+- Try to click fast to drag the opponent team
+- :trophy: The game ends when the outmost person of the team reach the wall behind, :skull: that's when the other team will all fall down.
 
 **Unfinished features**
 :mute: SFX
@@ -93,9 +93,18 @@ Java
 **Task allocation**
 Tam: code, create images
 
-**UML**
+**Results:**
 
-![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
+![image](https://user-images.githubusercontent.com/91868406/173172780-f6bbadf6-1749-4d8c-a850-cee756efcc32.png)
+
+![image](https://user-images.githubusercontent.com/91868406/173172793-d6b7a9ba-3ea9-4ea3-a600-a1a90f1dcf16.png)
+
+![image](https://user-images.githubusercontent.com/91868406/173172816-e57e67bf-141f-4495-bea5-d6de6bb12a4c.png)
+
+
+**UML**
+![UML class (2)](https://user-images.githubusercontent.com/91868406/173173000-35d9ccad-af67-44b2-a95b-d775a3bf9484.png)
+
 
 ## Glass bridge
 

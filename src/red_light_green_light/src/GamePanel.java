@@ -1,13 +1,10 @@
-package src;
+package src.red_light_green_light.src;
 
-import entity.Player;
+import src.red_light_green_light.entity.Player;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
+
 
 public class GamePanel extends JPanel implements Runnable {
     int FPS=60;
@@ -29,10 +26,10 @@ public class GamePanel extends JPanel implements Runnable {
 
     public final int startY = height/9;
     public final int finishY = height - startY ;
-    protected Image npc1 = new ImageIcon("res\\NPC\\NPC(1).png").getImage();
+    protected Image npc1 = new ImageIcon("src\\red_light_green_light\\res\\NPC\\NPC(1).png").getImage();
 
-    protected Image npc2 = new ImageIcon("res\\NPC\\NPC(2).png").getImage();
-    protected Image npc3 = new ImageIcon("res\\NPC\\NPC(3).png").getImage();
+    protected Image npc2 = new ImageIcon("src\\red_light_green_light\\res\\NPC\\NPC(2).png").getImage();
+    protected Image npc3 = new ImageIcon("src\\red_light_green_light\\res\\NPC\\NPC(3).png").getImage();
 
     //NEW THREAD AND KEYHANDLER!
     Thread gameThread;
