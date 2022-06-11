@@ -9,13 +9,13 @@ We are **JABON**
           email: ITITIU20302@student.hcmiu.edu.vn
 
           Nguyễn Vũ Nhật Quang ITITIU20149
-	  email: ITITIU201492@student.hcmiu.edu.vn
+	  	email: ITITIU201492@student.hcmiu.edu.vn
 
           Nguyễn Trần Trung Kỳ ITITIU20240
-	  email: ITITIU20240@student.hcmiu.edu.vn
+	 	 email: ITITIU20240@student.hcmiu.edu.vn
 
           Nguyễn Hoàng Thiên Phúc ITITIU20279
-	  email: ITITIU20279@student.hcmiu.edu.vn
+	 	 email: ITITIU20279@student.hcmiu.edu.vn
 
 
 **Motivation**
