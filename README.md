@@ -145,6 +145,9 @@ Ky: code for player
 
 
 ![image](https://user-images.githubusercontent.com/91868450/173168691-2b7f6020-1c83-4898-8561-b8fb4024a995.png)
+![image](https://user-images.githubusercontent.com/91868450/173175965-ec678dde-dd73-47e6-a601-4730bf7d0afc.png)
+![image](https://user-images.githubusercontent.com/91868450/173175970-6e21efbe-3500-41d9-be9d-141998ce77b1.png)
+
 
 
 **UML**
