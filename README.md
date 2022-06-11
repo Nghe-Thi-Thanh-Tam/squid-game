@@ -119,6 +119,11 @@ Phuc: code for map & main;
 
  Ky: code for player
 
+
+
+![image](https://user-images.githubusercontent.com/91868450/173168691-2b7f6020-1c83-4898-8561-b8fb4024a995.png)
+
+
 **UML**
 ![image](https://user-images.githubusercontent.com/91868450/173116364-3a3ca030-fb3a-4c2b-8e7b-0f39d2ecd63f.png)
 
