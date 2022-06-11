@@ -103,8 +103,8 @@ Tam: code, create images
 
 
 **UML**
+![UML class (2)](https://user-images.githubusercontent.com/91868406/173173000-35d9ccad-af67-44b2-a95b-d775a3bf9484.png)
 
-![UML class (1)](https://user-images.githubusercontent.com/91868406/173111141-1a700e39-181d-47be-b41b-1a62e176420c.png)
 
 ## Glass bridge
 
