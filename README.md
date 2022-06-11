@@ -129,6 +129,6 @@ Ky: code for player
 
 
 ## References:
-	https://youtu.be/om59cwR7psI 
-	https://youtu.be/VpH33Uw-_0E
-	https://www.youtube.com/watch?v=wT9uNGzMEM4)
+	https://www.youtube.com/watch?v=om59cwR7psI 
+	https://www.youtube.com/watch?v=VpH33Uw-_0E
+	https://www.youtube.com/watch?v=wT9uNGzMEM4
