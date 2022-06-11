@@ -160,6 +160,17 @@ Ky: code for player
 
 ## References: 
 
+
+
+
+https://www.youtube.com/watch?v=om59cwR7psI 
+
+https://www.youtube.com/watch?v=VpH33Uw-_0E
+
+https://www.youtube.com/watch?v=wT9uNGzMEM4
+
+## Library: 
+
 java.awt.image
 
 java.awt.event.KeyEvent
@@ -185,11 +196,3 @@ javax.swing.JFrame
 java.awt.event.MouseEvent
 
 java.awt.event.MouseListener
-
-
-
-https://www.youtube.com/watch?v=om59cwR7psI 
-
-https://www.youtube.com/watch?v=VpH33Uw-_0E
-
-https://www.youtube.com/watch?v=wT9uNGzMEM4
