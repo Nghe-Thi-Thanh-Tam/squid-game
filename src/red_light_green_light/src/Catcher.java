@@ -31,6 +31,14 @@ public class Catcher extends src.red_light_green_light.entity.Entity {
         front = setup("front");
     }
 
+    public void setIsFront(boolean isFront) {
+        this.isFront = isFront;
+    }
+
+    public void displayText(String text) {
+        this.text = text;
+    }
+
     public BufferedImage setup(String imageName){
         UtilityTool uTool = new UtilityTool();
         BufferedImage image = null;
