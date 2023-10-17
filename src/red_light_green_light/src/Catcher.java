@@ -26,6 +26,14 @@ public class Catcher extends src.red_light_green_light.entity.Entity {
         direction = "facingFront";
     }
 
+    public void displayText(String text) {
+    this.text = text;
+}
+
+    public void setIsFront(boolean isFront) {
+    this.isFront = isFront;
+}
+
     public void getCatcherImage(){
         back = setup("back");
         front = setup("front");
@@ -65,22 +73,26 @@ public class Catcher extends src.red_light_green_light.entity.Entity {
 
         }
     }
-    public void drawCatcher(Graphics g)
-    {
-        BufferedImage image = null;
-        //super.paintComponent(g);
-        int CatcherDisplay = 1;
-        switch (direction) {
-            case "back":
-                image = back;
-                break;
-            case "front":
-                image = front;
-                break;
+   public void drawCatcher(Graphics g) {
+    BufferedImage image = null;
+    // super.paintComponent(g);
 
-        }
-        g.drawImage(image, (int)x, (int)y , null);
+    if (isFront) {
+        image = front;
+    } else {
+        image = back;
     }
+
+    g.drawImage(image, (int) x, (int) y, null);
+
+    if (!text.isEmpty()) {
+        // Adjust the coordinates for text display
+        int textX = (int) x; // Adjust as needed
+        int textY = (int) y + image.getHeight() + 10; // Adjust as needed
+        g.drawString(text, textX, textY);
+    }
+}
+
 
     public void turn(){ // implement sound here!!!
 
